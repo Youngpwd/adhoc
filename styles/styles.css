@@ -1,3 +1,8 @@
+body {
+    box-sizing: border-box;
+}
+
+
 #twitter-icon {
     margin: 0 10px;
 }
@@ -8,10 +13,12 @@
 
 .contact-submenu {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: rgba(255, 255, 255, 0.37);
     z-index: 1;
-    top: 5%;
+    top: 2.5rem;
+    right: 55%;
+    width: 240px;
 }
 
 .modal-header {
@@ -20,3 +27,27 @@
     align-items: center;
 }
 
+.small-screen {
+    display: none;
+}
+
+#navbarDropdown li {
+    margin: 0px 10px;
+}
+
+#navbarDropdown a:hover {
+    text-decoration: underline 2px;
+}
+
+@media screen and (max-width: 576px) {
+    #contact {
+        display: none;
+    }
+    .small-screen {
+        display: block;
+    }
+    #nav-search {
+        background-color: #000;
+        color: #fff;
+    }
+}

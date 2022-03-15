@@ -54,7 +54,7 @@
           <li class="nav-item mr-4">
             <a href="#" class="nav-link">Our Team</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="contact">
             <a
               href="#"
               class="nav-link dropdown-toggle"
@@ -63,7 +63,71 @@
               >Contact Us</a
             >
           </li>
+          <li class="nav-item contact-submenu">
+            <!-- contact submenu hidden -->
+            <div class="container">
+              <div class="row w-100 h-auto">
+                <div class="col-12 w-100" id="submenu">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <a href="#"
+                        ><i
+                          class="fa fa-facebook-square fa-2x"
+                          id="facebook-icon"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa fa-twitter-square fa-2x"
+                          id="twitter-icon"
+                        ></i
+                      ></a>
+                      <a href="#"
+                        ><i
+                          class="fa fa-linkedin-square fa-2x"
+                          id="linkedin-icon"
+                        ></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-12 d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-outline-success"
+                        data-toggle="modal"
+                        data-target="#modalMessage"
+                      >
+                        Message Us
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- contact submenu small screen  -->
+          <li class="nav-item small-screen mt-4">
+            <a href="#" class="nav-link d-inline">
+              <i class="fa fa-facebook-square fa-2x" id="facebook-icon"></i>
+            </a>
+            <a href="#" class="nav-link d-inline">
+              <i class="fa fa-twitter-square fa-2x" id="twitter-icon"></i>
+            </a>
+            <a href="#" class="nav-link d-inline">
+              <i class="fa fa-linkedin-square fa-2x" id="linkedin-icon"></i>
+            </a>
+            <button
+            type="button"
+            class="btn btn-outline-success d-block my-3"
+            data-toggle="modal"
+            data-target="#modalMessage"
+          >
+            Message Us
+          </li>
         </ul>
+        <!-- nav search  -->
         <form class="form-inline my-2 my-lg-0">
           <input
             class="form-control mr-sm-2"
@@ -71,44 +135,13 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+          <button class="btn btn-outline-dark my-2 my-sm-0" id="nav-search" type="submit">
             Search
           </button>
         </form>
       </div>
     </nav>
-    <!-- contact submenu hidden -->
-    <div class="contact-submenu container">
-      <div class="row w-auto">
-        <div class="col-12 col-sm-6" id="submenu">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <a href="#"
-                ><i class="fa fa-facebook-square fa-2x" id="facebook-icon"></i
-              ></a>
-              <a href="#"
-                ><i class="fa fa-twitter-square fa-2x" id="twitter-icon"></i
-              ></a>
-              <a href="#"
-                ><i class="fa fa-linkedin-square fa-2x" id="linkedin-icon"></i
-              ></a>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-12 d-flex justify-content-center">
-              <button
-                type="button"
-                class="btn btn-link"
-                data-toggle="modal"
-                data-target="#modalMessage"
-              >
-                Message Us
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- Modal -->
     <div
       class="modal fade"
@@ -165,7 +198,9 @@
                   class="form-control"
                   rows="3"
                 ></textarea>
-                <button type="submit" class="btn btn-primary w-100 mt-2">Submit</button>
+                <button type="submit" class="btn btn-primary w-100 mt-2">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
@@ -182,6 +217,10 @@
       </div>
     </div>
 
+    <!-- header  -->
+    <header>
+
+    </header>
     <!-- scripts -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
