@@ -1,6 +1,6 @@
 html {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 body {
@@ -8,13 +8,13 @@ body {
 }
 
 #main-container {
-    max-width: 1300px;
-    margin: 0 auto;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 /* Nav  */
 nav {
-    z-index: 5;
+  z-index: 5;
 }
 
 #twitter-icon {
@@ -77,13 +77,18 @@ nav {
 
 /* cards */
 .card {
-    border: none;
+  border: none;
 }
 
 .card:hover {
-    border: 1px solid black;
-    border-radius: 5%;
-    padding: 5px;
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 5px;
+}
+
+/* carousel  */
+.carousel-item {
+  border: 1px solid black;
 }
 
 /* media queries  */
@@ -100,11 +105,14 @@ nav {
   }
 }
 
-@media screen and (max-width:425px) {
-    #jumbo-container h1 {
-        font-size: 3.5rem;
-    }
-   #quote {
-       font-size: 1.5rem;
-   }
+@media screen and (max-width: 425px) {
+  #jumbo-container h1 {
+    font-size: 3.5rem;
+  }
+  #quote {
+    font-size: 1.5rem;
+  }
+  #carousel-header {
+    font-size: 2rem;
+  }
 }
