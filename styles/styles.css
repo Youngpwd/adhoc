@@ -14,7 +14,7 @@ body {
 
 /* Nav  */
 nav {
-  z-index: 5;
+  z-index: 10;
 }
 
 #twitter-icon {
@@ -114,5 +114,8 @@ nav {
   }
   #carousel-header {
     font-size: 2rem;
+  }
+  .carousel-inner {
+    width: 100% !important;
   }
 }
